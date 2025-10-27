@@ -16,7 +16,7 @@ switch($metodo){
     break;
 
  case "POST":
-
+    metodoPOST();
     break;
 
  default:
@@ -58,6 +58,21 @@ function metodoGET(){
 
 
 
+}
+
+function metodoPOST(){
+    //Guardando uma variavel o conteudo envido pela URL, decodificando o JSON 
+    $novaComida= json_decode(file_get_contents("php://input"),true);
+    //PROCESSO DE SALVAR NO ARQIVO JSON
+    $comidas = json_decode( file_get_contents("comidas.json")  , true );
+
+    $comidas['comidas']+=$novaComida;
+    
+    file_put_contents('comidas.json',json_encode($comidas,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
+
+    echo json_encode('Dados inseridos com sucesso!');
+    
+    
 }
 
 
