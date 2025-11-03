@@ -1,6 +1,14 @@
-<?php
-    $url = "http://localhost/reforco_api/exercicio/api_secreta.php?info=sim";
-    $respota = file_get_contents($url);
+<!DOCTYPE html>
+<html>
+    <body>
+    <form action="" method="post">
+        <label for="chave">Chave</label>
+        <input type="text" name="chave">
+        <button type="submit">Enviar</button>
+    </form>
+    <?php
+        $url = "http://localhost/reforco_api/exercicio/api_secreta.php?info";
+        $respota = file_get_contents($url);
     
 
 

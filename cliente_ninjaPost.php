@@ -2,12 +2,13 @@
     $url = "http://localhost/reforco_api/api_ninja.php";
 
     $chaveNinja = [
-        'id'=>'23',
+        'codigo'=>'ABCDE1234',
+        'nome'=>"Gustavo"
     ];
 
     $estruturaHttp=[
         'http'=>[
-            'method'=>"DELETE",
+            'method'=>"POST",
             'header'=>"Content-Type: application/json\r\n",
             'content'=>json_encode($chaveNinja)
         ]
