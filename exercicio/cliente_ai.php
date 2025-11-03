@@ -23,9 +23,9 @@
     $resposta_json=json_decode($resposta,true);
     
     if(isset($resposta_json['candidates'][0]['content']['parts'][0]['text'])){
-        $texto= $resposta_json['candidates'][0]['content']['parts'][0]['text'];
+        
         echo '##Explicação do motor:\n<br>';
-        $text_html=nl2br($texto);
+        echo $resposta_json['candidates'][0]['content']['parts'][0]['text'];
     }else{
         echo 'Erro: Não foi possível obter o texto da resposta. Verifique sua chave de API ou as permissões.';
     }
