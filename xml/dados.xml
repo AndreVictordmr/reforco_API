@@ -1,0 +1,19 @@
+<usuarios>
+    <usuario>
+        <nome> Gustavo </nome>
+        <altura> 1.07 </altura>
+        <hobbies>
+            <hobbie> Assistir filme </hobbie>
+            <hobbie> Contruir jogos </hobbie>
+        </hobbies>
+    </usuario>
+
+    <usuario>
+        <nome> Amelia </nome>
+        <altura> 1.67 </altura>
+        <hobbies>
+            <hobbie> Desenhar </hobbie>
+            <hobbie> Fazer crochê </hobbie>
+        </hobbies>
+    </usuario>
+</usuarios>
