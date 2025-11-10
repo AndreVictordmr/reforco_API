@@ -5,7 +5,7 @@
     $content =[
         'contents'=>[
             'parts'=>[
-                'text'=>"Me explique o funcionamento do um motor"
+                'text'=>"Me explique o funcionamento do um motor com arrumado para um site com suas respectivas tags"
             ]
         ]
     ];
